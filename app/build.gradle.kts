@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.alishoumar.camerax"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.alishoumar.camerax"
@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.camera.view)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +67,19 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.material.icons.extended.android)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.video)
+
+    implementation(libs.androidx.camera.video)
+    implementation(libs.androidx.camera.extensions)
+
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation(libs.androidx.lifecycle.runtime.compose.android)
+    implementation(libs.androidx.lifecycle.viewmodel.compose.android)
 }
